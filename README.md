@@ -1,15 +1,13 @@
 # RE:BUILD
 
-## Remote Controlled Robot Powered By C.H.I.P
+## Remote Controlled Robot Powered By C.H.I.P (Robot and API part)
 
-Your task is to build API and visual front-end for controlling the rover robot. Attach camera to robot and stream it to your front-end.
-Add controls that are easy for users to use, and optionally provide some sort of authentication.
-
-Optionally you can develop Android application that uses the bluetooth of the C.H.I.P for controlling the robot. If you have time you can add more functionalities
-such as speech controlling etc. Use your imagination!
+Your task is to finish the robot and to build an API for controlling it. Provide API calls for basic movement first, and later
+you can add combinations and tricks etc. Build camera stream to be used in controller application. Add some sort of authentication to make the system
+secure. Provide good documentation for the group that is working with controller application for the same robot.
 
 Focus on:
-- Providing working controls for the robot
-- Stream the camera to your front-end
-- Add more functionalities to robot
-- Documentation so that others are able to test the robot aswel
+- Providing working API for robot's basic movement
+- Good documentation for using the API
+- Stream the camera to be used with front end
+- Add more functionalities to API
