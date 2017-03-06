@@ -4,10 +4,6 @@ Created on Sun Sep 18 16:42:02 2016
 
 @author: jussi
 """
-
-import numpy as np
-import cv2
-
 import numpy as np
 import cv2
 from time import sleep
@@ -28,7 +24,7 @@ class Cv2FaceTracker:
 			cv2.rectangle(img,(x,y),(x+w,y+h),(255,0,0),2)
 			height, width, channels = img.shape
 			self.prev_face_pos = ((x+w/2.0)/width, (y+h/2.0)/height)
-			print x,y
+			#print x,y
 			return self.prev_face_pos 
 		
 		return None, None
