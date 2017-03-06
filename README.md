@@ -25,4 +25,5 @@ Focus on:
 ### On the chip
 - `git init && git pull` this repo on to the PC you would like to use as an remote controller.
  - Install a FTP server that has write permissions for a user chip with password chip to the folder `/home/chip`. This is where the webcam images will be uploaded. We used `vsftpd` from Ubuntu repositories with some configuring on permissions and write access. 
+ - Make sure Python2.7 and Pygame are installed and run the `controller.py` sever script. If you want to test the experimental face follower functionality, also install `python-opencv`. 
 - `git init && git pull` this repo on to the Chip controlling the robot. `cd` to the `onChip` folder, edit the rc.
