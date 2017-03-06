@@ -22,8 +22,14 @@ Focus on:
 - Implemented a face recognition that is running on the server. If `e`is pressed on 
 
 ## How to get it running
-### On the chip
+### On the PC
 - `git init && git pull` this repo on to the PC you would like to use as an remote controller.
  - Install a FTP server that has write permissions for a user chip with password chip to the folder `/home/chip`. This is where the webcam images will be uploaded. We used `vsftpd` from Ubuntu repositories with some configuring on permissions and write access. 
  - Make sure Python2.7 and Pygame are installed and run the `controller.py` sever script. If you want to test the experimental face follower functionality, also install `python-opencv`. 
-- `git init && git pull` this repo on to the Chip controlling the robot. `cd` to the `onChip` folder, edit the rc.
+ - Start the controller server with the command `python controller.py`.
+ ### On the chip
+- `git init && git pull` this repo on to the Chip controlling the robot and `cd` to the `onChip` folder.
+ - Install `fswebcam` that is used to take pictures with the webcam.
+ - In the file `pictureloop.sh` change the IP address on row 8 to point to the PC you are running your FTP server on.
+ - In the file `rc.py` change the IP address on row 9 to point to the PC you are running your `controller.py` on.
+ - Ensure that the server on the PC is still waiting for the client to connect and run the `pictureloop.sh`, which will start the `rc.py`and then start sending webcam pictures to the FTP server.
