@@ -39,4 +39,4 @@ Focus on:
 This is experimental feature that was implemented during the hackathon, but not completely finished tested. It might work OK... or not. It is based on the Haar cascade face recognitor that comes with OpenCV machine vision library. If the face follower is enabled the Chip robot will home towards a face it sees.
 - Given that the package `python-opencv`is installed on the PC, press `e` on the controller application to toggle the face follower. Then tilt the robot webcam so that the robot sees some faces.
 - Move away until the robot sees your face. Then it will turn and/or drive towards you until the tracking is lost. Beware, the robot will not stop for any obstacles if it gets a reading of a face.
-- If left and right are mixed (the robot turns **away** from a face, change the rows 61,62,64,65 in the `controller.py´ and it is fixed!
+- If left and right are mixed (the robot turns **away** from a face) change the rows 61, 62, 64, and 65 in the `controller.py´ and it should fix it!
